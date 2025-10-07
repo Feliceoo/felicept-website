@@ -12,6 +12,8 @@ body{
     background-color: #181818;
     padding-top: 150px;
     scroll-behavior: smooth;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .immagineheader{
@@ -29,6 +31,9 @@ body{
     align-items: center;
     padding: 0 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.divisore {
+    margin-bottom: 20px;
 }
 
 .immagineheader img {
@@ -216,8 +221,32 @@ p{
     }
     
     #about p{
-        font-size: 16px;
+        font-size: 15px;
+    line-height: 1.6;
+    padding: 10px;
     }
+    .immagineheader {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    height: auto;
+    text-align: center;
+}
+
+.immagineheader a {
+    display: block;
+    width: 100%;
+}
+
+.header-title {
+    font-size: 18px;
+}
+
+.call {
+    width: auto;
+    padding: 10px 20px;
+}
 }
 
 @media (max-width: 480px) {
