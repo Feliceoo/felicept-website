@@ -257,8 +257,11 @@ p{
 }
 
 @media (max-width: 768px) {
-    body .immagineheader {
+    .immagineheader {
         position: static !important;
     }
+    body {
+        padding-top: 20px;
+    }
 }
-}
+
