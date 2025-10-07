@@ -255,8 +255,10 @@ p{
         font-size: 14px;
     }
 }
+
 @media (max-width: 768px) {
-    .immagineheader {
-        position: static;
+    body .immagineheader {
+        position: static !important;
     }
+}
 }
