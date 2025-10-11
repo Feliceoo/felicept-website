@@ -1,0 +1,267 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #181818;
+    padding-top: 150px;
+    scroll-behavior: smooth;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.immagineheader{
+    position: fixed;
+    top: 0;
+    left: 0;    
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    z-index: 1000;
+    
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.divisore {
+    margin-bottom: 20px;
+}
+
+.immagineheader img {
+    height: 100px;
+    margin-right: auto;
+}
+
+.header-title{
+    font-size: 20px;
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.header-title:hover{
+    transform: scale(1.05);
+}
+
+.immagineheader a {
+    text-decoration: none;
+}
+
+.call{
+    color: white;
+    font-style: italic;
+    background-color: #ff6b6b;
+    border-radius: 10px;
+    padding: 15px 25px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.call:hover{
+    background-color: #ff5252;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 107, 107, 0.4);
+}
+
+/* Sezione About */
+#about{
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+p{
+    color: whitesmoke;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+/* Sezione Servizi */
+#servizi{
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    margin-top: 50px;
+    padding: 60px 20px;
+}
+
+.barra1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.divisore{
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.divisore:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+#onlinecoaching{
+    color: #9aff7a;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#onlinecoaching-description{
+    padding-bottom: 20px;
+}
+
+#nutrizione{
+    color: #ffa500;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#nutrizione2{
+    padding-bottom: 20px;
+}
+
+#accountability{
+    color: #ff6b9d;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#accountability2{
+    padding-bottom: 20px;
+}
+
+/* Form Container */
+.form-container{
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 500px;
+    margin: 50px auto;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.colore-form {
+    color: #5db9c5;
+    font-weight: bold;
+}
+
+#prenota-consulenza{
+    font-size: 20px;
+    background: linear-gradient(135deg, #23a094 0%, #1e8a7f 100%);
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+#prenota-consulenza:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(35, 160, 148, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .barra1{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .immagineheader{
+        height: auto;
+        padding: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .immagineheader img {
+        height: 60px;
+        margin: 0 auto 10px;
+    }
+    
+    .header-title{
+        font-size: 16px;
+    }
+    
+    body{
+        padding-top: 100px;
+    }
+    
+    .barra1{
+        grid-template-columns: 1fr;
+    }
+    
+    #about p{
+        font-size: 15px;
+    line-height: 1.6;
+    padding: 10px;
+    }
+    .immagineheader {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    height: auto;
+    text-align: center;
+}
+
+.immagineheader a {
+    display: block;
+    width: 100%;
+}
+
+.header-title {
+    font-size: 18px;
+}
+
+.call {
+    width: auto;
+    padding: 10px 20px;
+}
+}
+
+@media (max-width: 480px) {
+    .call{
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .immagineheader {
+        position: static !important;
+    }
+    body {
+        padding-top: 20px;
+    }
+}
+
